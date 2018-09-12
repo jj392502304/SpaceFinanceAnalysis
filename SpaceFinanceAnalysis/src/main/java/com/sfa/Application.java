@@ -12,6 +12,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
  * @author David
  * @date 2017/12/01. 后台启动类
  */
+//更新了
 @tk.mybatis.spring.annotation.MapperScan(basePackages = "com.sfa.dao")
 @SpringBootApplication
 @EnableWebMvc
