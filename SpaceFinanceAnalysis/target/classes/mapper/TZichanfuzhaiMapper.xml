@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sfa.dao.TZichanfuzhaiMapper">
+  <resultMap id="BaseResultMap" type="com.sfa.model.TZichanfuzhai">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="t_zcfz_id" jdbcType="VARCHAR" property="tZcfzId" />
+    <result column="t_com_id" jdbcType="VARCHAR" property="tComId" />
+    <result column="t_huobizijin" jdbcType="VARCHAR" property="tHuobizijin" />
+    <result column="t_yingshouzhangkuan" jdbcType="VARCHAR" property="tYingshouzhangkuan" />
+    <result column="t_gudingzichanyuanzhi" jdbcType="VARCHAR" property="tGudingzichanyuanzhi" />
+    <result column="t_leijizhejiu" jdbcType="VARCHAR" property="tLeijizhejiu" />
+    <result column="t_gudingzichanheji" jdbcType="VARCHAR" property="tGudingzichanheji" />
+    <result column="t_zichanheji" jdbcType="VARCHAR" property="tZichanheji" />
+  </resultMap>
+</mapper>
