@@ -12,7 +12,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
  * @author David
  * @date 2017/12/01. 后台启动类
  */
-//更新了
+
 @tk.mybatis.spring.annotation.MapperScan(basePackages = "com.sfa.dao")
 @SpringBootApplication
 @EnableWebMvc
@@ -28,7 +28,7 @@ public class Application {
 		return new EmbeddedServletContainerCustomizer() {
 			@Override
 			public void customize(ConfigurableEmbeddedServletContainer container) {
-				container.setSessionTimeout(1800);// 单位为S
+				container.setSessionTimeout(10);// 单位为S
 				container.setPort(8077);
 			}
 		};

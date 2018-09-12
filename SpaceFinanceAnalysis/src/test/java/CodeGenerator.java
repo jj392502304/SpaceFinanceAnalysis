@@ -21,7 +21,7 @@ import static com.sfa.core.ProjectConstant.*;
  */
 public class CodeGenerator {
     //JDBC配置，请修改为你项目的实际配置
-    private static final String JDBC_URL = "jdbc:mysql://10.96.105.119:3306/space_finance_analysis";
+    private static final String JDBC_URL = "jdbc:mysql://127.0.0.1:3306/space_finance_analysis";
     private static final String JDBC_USERNAME = "root";
     private static final String JDBC_PASSWORD = "root";
     private static final String JDBC_DIVER_CLASS_NAME = "com.mysql.jdbc.Driver";
@@ -42,6 +42,7 @@ public class CodeGenerator {
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
     	List<String> selectAlltableName = TableUtil.selectAlltableName("jdbc:mysql://10.96.105.119:3306/space_finance_analysis", "space_finance_analysis");
 //    	System.out.println(selectAlltableName);
+    	
         genCode(selectAlltableName);
         //genCodeByCustomModelName("输入表名","输入自定义Model名称");
     }

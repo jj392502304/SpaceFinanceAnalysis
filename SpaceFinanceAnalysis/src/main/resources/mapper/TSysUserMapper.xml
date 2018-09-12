@@ -11,4 +11,17 @@
     <result column="t_role" jdbcType="VARCHAR" property="tRole" />
     <result column="t_status" jdbcType="VARCHAR" property="tStatus" />
   </resultMap>
+  
+   <resultMap id="BaseResultMap1" type="com.sfa.model.TSysUser">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="t_user_id" jdbcType="VARCHAR" property="tUserId" />
+    <result column="t_user_name" jdbcType="VARCHAR" property="tUserName" />
+    <result column="t_role" jdbcType="VARCHAR" property="tRole" />
+    <result column="t_status" jdbcType="VARCHAR" property="tStatus" />
+  </resultMap>
+  <select id="login" parameterType="java.lang.String" resultMap="BaseResultMap1">
+  	select * from t_sys_user where t_user_name=#{tUserName} and t_user_pwd=#{tUserPwd}
+  </select>
 </mapper>
